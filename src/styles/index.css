@@ -5,6 +5,9 @@
   --secondary-dark:#631D76;
   --secondary-light:#9E4770;
 }
+*{
+  box-sizing: border-box !important;
+}
 body {
     margin: 0;
     font-family: 'Lexend Mega', sans-serif;
@@ -19,54 +22,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--lighter-dark);
   color: var(--text);
   height: 5vh;
 }
-  
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1700px;
+.wrapper{
+  width: 90% !important;
+  margin: 0 auto !important;
+  max-width: 1700px !important;
+}
+.particles{
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 #table {
   display: grid;
   grid-template-columns: repeat(17, auto) 1fr;
-  padding: 12px;
+  grid-area: 17/17;
 }
 
 /* Every element box  */
 .element {
   cursor: pointer;
-  width: 6vw;
-  height: 6vw;
-  padding:6px;
-  margin-left: 3px;
-  margin-right: 3px;
+  width: 5vw;
+  height: 5.5vw;
+  padding-top:2px;
   border: 1px solid var(--lighter-dark);
   border-collapse: collapse;
   overflow: hidden;
   color:black;
+  font-size: .65vw;
 }
 
 .number {
   float: left;
   font-size: 0.85vw;
   position: absolute;
+  color: #000;
 }
 
 .symbol {
   font-weight: bold;
   text-align: center;
+  color: #000;
   margin-top: 0.5vw;
   margin-bottom: 0.75vw;
   font-size: 2.5vw;
 }
 
 .element-name {
-  font-size: 0.8vw;
   text-align: center;
+  color: #000;
 }
 
 #element-box .symbol {
@@ -78,7 +88,7 @@ body {
 }
 
 #element-box .element-name {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 
 #element-box {
@@ -96,7 +106,7 @@ body {
   padding: 0.5vw;
   padding-top: 0;
   font-size: 1vw;
-  max-height: 10vw;
+  max-height: 11.5vw; 
   overflow-y: scroll;
 }
 
@@ -114,6 +124,7 @@ body {
   margin-left: 5px;
   top: -0.7vw;
   position: relative;
+  color: black;
 }
 
 .close-button {
@@ -123,7 +134,7 @@ body {
 }
 
 .close-button:hover {
-  color: #333333;
+  color: var(--secondary-light);
 }
 
 .appearance {
@@ -132,7 +143,7 @@ body {
 
 .atom_info {
   margin-bottom: 0.5vw;
-  color: #998100;
+  color: var(--secondary-light);
 }
 
 /* Helium to the top right  */
@@ -140,6 +151,9 @@ body {
   grid-column-start: -2;
 }
 
+a{
+  color: var(--secondary-light);
+}
 /* Boron & Alumunium to the right  */
 .element-5,
 .element-13 {

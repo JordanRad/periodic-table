@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 //CSS files
 import './styles/index.css';
 import './styles/normalize.css';
@@ -9,15 +9,19 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import PeriodicTable from './components/PeriodicTable';
+import Partciles from 'react-particles-js';
+import particlesOptions from './components/particlesOptions';
 document.title = 'Periodic Table of Elements';
 
 function App() {
   return (
-    <div>
+    <div className='wrapper'>
+      <Partciles
+            className="particles"
+            params={particlesOptions}
+          />
       <Header/>
-      <div className="mt5 mb5">
-        <PeriodicTable/>
-      </div>
+      <PeriodicTable/>
       <Footer/>
     </div>
   );

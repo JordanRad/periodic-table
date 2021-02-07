@@ -14,9 +14,10 @@ const Info = (props) => {
         density,
         melt,
         boil
-      } = props;
+      } = props.el;
+      console.log(props)
     return (
-        <Fragment>
+        <>
               <div id="element-box" className={`${category}`}>
                 <div className="number">{number}</div>
                 <div className="symbol">{symbol}</div>
@@ -24,7 +25,7 @@ const Info = (props) => {
               </div>
               <div id="information">
                 <div
-                  onClick={this.closeInfo}
+                  onClick={(e)=>props.closeInfo()}
                   className="close-button"
                   title="Close Info">
                   Close [&times;]
@@ -47,15 +48,15 @@ const Info = (props) => {
                     {boil ? <span> | Boil: {boil}K</span> : ''}
                   </div>
                   <div>
-                    {summary} ...{' '}
+                    {summary}{' '}
                     <a target="_blank" href={source}>
-                      Source
+                    ...Source
                     </a>
                   </div>
                 </div>
               </div>
-            </Fragment>
+            </>
       );
 }
  
-export default Info;props
+export default Info;

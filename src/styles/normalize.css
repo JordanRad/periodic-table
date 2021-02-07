@@ -23,7 +23,9 @@
   body {
     margin: 0;
   }
-  
+  *{
+    box-sizing: border-box !important;
+  }
   /**
    * Render the `main` element consistently in IE.
    */

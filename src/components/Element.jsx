@@ -1,17 +1,21 @@
-import React ,{useState} from 'react';
-import {elements} from '../data';
+import React, { useState } from 'react';
+import { elements } from '../data';
 const Element = (props) => {
-    const [hover,setHover] = useState('');
+    const [hover, setHover] = useState('');
     let { num } = props;
     let element = elements[num];
+
+    const openInfo = (event) => {props.showInfo(event, num)}
+    const onMouseEnter = (event) => {setHover(true)}
+    const onMouseLeave = (event) => {setHover(false)}
     return (
         <div
             title={element.name}
-            // onMouseEnter={this.onMouseEnter}
-            // onMouseLeave={this.onMouseLeave}
-            // onClick={this.openInfo}
-            className={`element element-${num} ${element.category} ${hover ? 'active' : ''
-                }`}>
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            onClick={openInfo}
+            className={`element element-${num} 
+            ${element.category} ${hover ? 'active' : ''}`}>
             <div className="number">{element.number}</div>
             <div className="symbol">{element.symbol}</div>
             <div className="element-name">{element.name}</div>
