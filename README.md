@@ -1,7 +1,7 @@
 # Periodic table
 by Jordan Radushev
 
-[Click here to see the periodic table](https://jordan-periodic-table.herokuapp.com/)
+[Click here to see the periodic table](https://youthful-shirley-a8dfd5.netlify.app/)
 
 #### How to set up the project locally:
 1. Clone the repository locally:
