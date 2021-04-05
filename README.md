@@ -1,5 +1,7 @@
 # Periodic table
-by Jordan Radushev
+
+## Case
+As I am constantly developing some projects, I randomly found the idea of making an interactive periodic table and I started implementing it immediately. I found it really interesting and it did not seem difficult to build. Here is my interpretation of interactive table of chemical elements
 
 [Click here to see the periodic table](https://youthful-shirley-a8dfd5.netlify.app/)
 
