@@ -5,21 +5,26 @@ As I am constantly developing some projects, I randomly found the idea of making
 
 [Click here to see the periodic table](https://youthful-shirley-a8dfd5.netlify.app/)
 
-## How to set up the project locally:
-1. Clone the repository locally:
-```
-git clone https://github.com/JordanRad/periodic-table.git
-```
-2. Open the folder with the project:
-```
-cd periodic-table
-```
-3. Install npm in the folder:
+## Stable version
+![photo](https://github.com/JordanRad/periodic-table/blob/main/public/screenshot.png)
+
+## Used Technologies
+- React JS
+- CSS3
+- Particles JS
+
+## Instructions to set-up the project locally:
+- Clone the repo and go to the project's folder.
+- Install dependencies
 ```
 npm install
 ```
-4. Start the project:
+- Install npm in the folder:
+```
+npm install
+```
+- Start the project:
 ```
 npm start
 ```
-And wait until it loads on localhost:3000
+*The application will automaticaly start on localhost:3000.*
